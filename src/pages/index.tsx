@@ -9,6 +9,9 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
     palette: {
       mode: "light",
     },
+    typography: {
+      fontFamily: "Public Sans, sans-serif",
+    },
   });
 
   return (
@@ -22,5 +25,17 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
 export default IndexPage;
 
 export const Head: HeadFC = () => (
-  <title>Frontend Mentor | Easybank Landing Page</title>
+  <>
+    <title>Frontend Mentor | Easybank Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossOrigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Righteous&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </>
 );
